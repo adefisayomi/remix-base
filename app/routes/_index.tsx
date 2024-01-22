@@ -16,10 +16,6 @@ export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
       welcome home
-
-      <LogoutButton />
-
-      <Link to='/signup'>Signup</Link>
     </div>
   );
 }

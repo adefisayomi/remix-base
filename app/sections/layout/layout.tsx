@@ -1,6 +1,7 @@
 import { ReactNode, useEffect, useState } from "react";
 import Header from "./Header";
 import { useLocation } from "@remix-run/react";
+import Footer from "./footer";
 
 
 
@@ -23,13 +24,13 @@ export default function Layout ({children}: {children: ReactNode}) {
                 <Header />
             </header>}
 
-            <main>
+            <main className="flex-grow mx-auto w-full max-w-6xl pt-2">
                 {children}
             </main>
 
             {showNav && 
             <footer>
-                footer
+                <Footer />
             </footer>}
         </div>
     )
